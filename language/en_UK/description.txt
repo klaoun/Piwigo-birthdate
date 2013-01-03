@@ -1,0 +1,1 @@
+Set a birthdate on a tag and Piwigo will display the age on any photo.

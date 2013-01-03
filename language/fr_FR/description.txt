@@ -1,0 +1,1 @@
+Donnez une date de naissance à vos tags et Piwigo en affichera l'âge pour chaque photo.
