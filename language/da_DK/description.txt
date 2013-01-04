@@ -1,0 +1,1 @@
+Opsæt et fødselsdagstag, hvorefter Piwigo kan vise alderen på ethvert fotografi.
