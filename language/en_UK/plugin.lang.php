@@ -1,7 +1,7 @@
 <?php
 $lang['Birthdate'] = 'Birthdate';
 $lang['Birthdates'] = 'Birthdates';
-$lang['on this photo %s is %s old'] = 'on this photo %s is %s old';
+$lang['on this photo %s is %s old'] = 'in this photo %s is %s old';
 $lang['%d photo'] = '%d photo';
 $lang['%d photos'] = '%d photos';
 $lang['Add a birthdate'] = 'Add a birthdate';
