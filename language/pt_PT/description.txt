@@ -1,0 +1,1 @@
+Defina uma data de aniversário na etiqueta e Piwigo mostrará a data em qualquer foto.
