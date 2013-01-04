@@ -1,1 +1,1 @@
-Piwigo, ayarlanan doğum tarihine göre herhangi bir fotoğraf üzerinde yaş etiketi görüntüler.
+Piwigo, bu eklentide seçilen doğum tarihine göre herhangi bir fotoğraf üzerinde yaş etiketi görüntüler.
