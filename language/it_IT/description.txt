@@ -1,0 +1,1 @@
+Impostare una data di nascita su un tag e Piwigo verrà visualizzato l'età di ogni immagine.
