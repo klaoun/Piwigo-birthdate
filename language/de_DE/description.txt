@@ -1,0 +1,1 @@
+Setzt ein Geburtstag in ein Schlagwort und Piwigo wird das Alter auf einem Foto anzeigen.
