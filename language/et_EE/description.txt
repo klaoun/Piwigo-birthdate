@@ -1,0 +1,1 @@
+Märgista sünnipäevad ja Piwigo näitab vanust igal pildil.
