@@ -1,0 +1,1 @@
+Establezca una fecha de nacimiento en una etiqueta y Piwigo mostrará la edad en cualquier foto.
