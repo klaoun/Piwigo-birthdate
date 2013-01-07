@@ -1,0 +1,1 @@
+Iestatīt dzimšanas datumu tagā (birkā) un Piwigo rādīs vecumu uz jebkura foto.
