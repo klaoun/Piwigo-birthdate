@@ -1,0 +1,1 @@
+Marque uma data de aniversário numa etiqueta e Piwigo irá mostrar a idade na foto.
