@@ -1,0 +1,1 @@
+Alege o zi de naştere pentru o etichetă şi Piwigo va afişa vârsta pe orice imagine.
