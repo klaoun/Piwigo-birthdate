@@ -26,4 +26,14 @@ $lang['Now'] = 'Nyt';
 $lang['on this photo %s is %s old'] = 'tässä kuvassa %s on %s ikäinen';
 $lang['%d photo'] = '%d kuva';
 $lang['%d photos'] = '%d kuvaa';
+$lang['Add a birthdate'] = 'Lisää syntymäpäivä';
+$lang['Birthdate'] = 'Syntymäpäivä';
+$lang['Birthdate removed for %s'] = 'Syntymäpäivä poistettu kohteelta %s';
+$lang['Birthdates'] = 'Syntymäpäivät';
+$lang['Delete birthdate for %s'] = 'Poista syntymäpäivä kohteelta %s';
+$lang['Edit a birthdate'] = 'Muuta syntymäpäivää';
+$lang['Manage birthdates'] = 'Hallitse syntymäpäiviä';
+$lang['Select a birthdate'] = 'Valitse syntymäpäivä';
+$lang['Select a tag'] = 'Valitse tägi';
+$lang['Who?'] = 'Kenelle?';
 ?>

@@ -1,0 +1,1 @@
+Liitä avainsanaan syntymäpäivä, niin Piwigo näyttää sen iän missä tahansa kuvassa.
