@@ -33,4 +33,7 @@ $lang['Select a birthdate'] = 'Wybierz datę urodzin';
 $lang['Select a tag'] = 'Wybierz tag';
 $lang['Who?'] = 'Kto?';
 $lang['on this photo %s is %s old'] = 'na tym zdjęciu %s ma %s lat';
+$lang['%d photo'] = 'Zdjęcie %d';
+$lang['%d photos'] = 'Zdjęć %d';
+$lang['No photo'] = 'Brak zdjęcia';
 ?>
