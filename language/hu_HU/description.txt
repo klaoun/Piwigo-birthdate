@@ -1,0 +1,1 @@
+A bővítmény használatával születésnap (létrehozás időpontja) rendelhető az egyes címkékhez. Hozzárendelés után a Piwigo megjeleníti a születésnapot a címkéhez tartozó képeknél.
