@@ -1,0 +1,1 @@
+Establece unha etiqueta para a data de aniversario e Piwigo amosará a idade en calquera foto.
