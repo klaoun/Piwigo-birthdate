@@ -1,0 +1,1 @@
+Plugin Birthdate umožňuje k popisku (např.jméno osoby na fotce) přidat datum narození a Piwigo následně u takto zadaného tagu zobrazí automaticky věk.
