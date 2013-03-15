@@ -1,0 +1,1 @@
+Donnez une date de naissance à vos mots clés et Piwigo en affichera l'âge pour chaque photo.
