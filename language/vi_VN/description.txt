@@ -1,0 +1,1 @@
+Đặt ngày sinh trên thẻ ảnh và Piwigo sẽ hiển thị tuổi ở trên ảnh.
