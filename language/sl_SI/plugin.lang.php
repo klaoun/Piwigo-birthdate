@@ -29,11 +29,11 @@ $lang['Birthdates'] = 'Rojstni datumi';
 $lang['Delete birthdate for %s'] = 'Izbriši datum rojstva';
 $lang['Edit a birthdate'] = 'Uredi datum rojstva';
 $lang['Manage birthdates'] = 'Urejaj rojstne datume';
-$lang['Minute'] = 'Minute';
+$lang['Minute'] = 'Minuta';
 $lang['No photo'] = 'Ni slike';
 $lang['Now'] = 'Sedaj';
 $lang['Select a birthdate'] = 'Izberi datum rojstva';
 $lang['Select a tag'] = 'Izberi oznako';
 $lang['Who?'] = 'Kdo?';
-$lang['on this photo %s is %s old'] = 'Na tej sliki %s je star %s';
+$lang['on this photo %s is %s old'] = 'Na tej sliki je %s star %s';
 ?>
