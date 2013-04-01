@@ -1,0 +1,1 @@
+Sett ein fødselsdato for eit stikkord og Piwigo vil vise alderen på alle bilete.
