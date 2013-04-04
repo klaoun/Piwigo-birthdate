@@ -20,20 +20,20 @@
 // | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
 // | USA.                                                                  |
 // +-----------------------------------------------------------------------+
-$lang['Birthdates'] = 'تاریخ تولد';
-$lang['Delete birthdate for %s'] = 'حذف تاریخ تولد';
+$lang['Birthdates'] = 'زادروزها';
+$lang['Delete birthdate for %s'] = 'پاک کردن زادروز %s';
 $lang['Minute'] = 'دقیقه';
-$lang['on this photo %s is %s old'] = 'در تصاویر قدیمی';
-$lang['Who?'] = 'کیه';
-$lang['Select a tag'] = 'انتخاب تگ';
-$lang['Select a birthdate'] = 'انتخاب تاریخ تولد';
+$lang['on this photo %s is %s old'] = '%s در این عکس %s سالشه';
+$lang['Who?'] = 'چه کسی؟';
+$lang['Select a tag'] = 'انتخاب یک برچسب';
+$lang['Select a birthdate'] = 'انتخاب یک زادروز';
 $lang['Now'] = 'اکنون';
-$lang['No photo'] = 'بدون تصویر';
-$lang['Manage birthdates'] = 'مدیریت تاریخ تولد';
-$lang['Edit a birthdate'] = 'ویرایش تاریخ تولد';
-$lang['Birthdate removed for %s'] = 'حذف تاریخ تولد';
-$lang['Birthdate'] = 'تاریخ تولد';
-$lang['%d photos'] = 'تصاویر';
-$lang['Add a birthdate'] = 'افزودن تاریخ تولد';
-$lang['%d photo'] = 'عکس';
+$lang['No photo'] = 'بدون عکس';
+$lang['Manage birthdates'] = 'مدیریت زادروزها';
+$lang['Edit a birthdate'] = 'ویرایش یک زادروز';
+$lang['Birthdate removed for %s'] = 'زادروز %s پاک شد';
+$lang['Birthdate'] = 'زادروز';
+$lang['%d photos'] = '%d عکس';
+$lang['Add a birthdate'] = 'افزودن یک زادروز';
+$lang['%d photo'] = '%d عکس';
 ?>
