@@ -1,0 +1,1 @@
+Piwigo mostrarà l'antiguitat de qualsevol foto afegint la data de creació (aniversari) en una etiqueta.
