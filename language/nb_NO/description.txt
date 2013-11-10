@@ -1,0 +1,1 @@
+Angi bursdag som egenskap på et bilde, og Piwigo vil vise alder.
