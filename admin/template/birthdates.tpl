@@ -7,14 +7,14 @@
 {/if}
 
 {combine_script id='jquery.chosen' load='footer' path='themes/default/js/plugins/chosen.jquery.min.js'}
-
 {combine_css path="themes/default/js/plugins/chosen.css"}
+
 {combine_css path="themes/default/js/ui/theme/jquery.ui.datepicker.css"}
 {combine_css path="themes/default/js/ui/theme/jquery.ui.slider.css"}
 
-{footer_script require='jquery.timepicker'}{literal}
+{footer_script require='jquery.timepicker'}
 jQuery(document).ready(function() {
-  jQuery("#who").chosen();
+  jQuery("#who").chosen({ "width":"300px" });
 
   jQuery('#birthdateSelect').datetimepicker({
     numberOfMonths: 1,
@@ -22,11 +22,11 @@ jQuery(document).ready(function() {
     changeYear: true,
     yearRange: "1900:+1",
     dateFormat: "yy-mm-dd",
-    timeText: '{/literal}{'selection'|@translate|escape:javascript}{literal}',
-    hourText: '{/literal}{'Hour'|@translate|escape:javascript}{literal}',
-    minuteText: '{/literal}{'Minute'|@translate|escape:javascript}{literal}',
-    currentText: '{/literal}{'Now'|@translate|escape:javascript}{literal}',
-    closeText: '{/literal}{'Validate'|@translate|escape:javascript}{literal}'
+    timeText: '{'selection'|@translate|escape:javascript}',
+    hourText: '{'Hour'|@translate|escape:javascript}',
+    minuteText: '{'Minute'|@translate|escape:javascript}',
+    currentText: '{'Now'|@translate|escape:javascript}',
+    closeText: '{'Validate'|@translate|escape:javascript}'
   });
 
   jQuery("#displayForm").click(function() {
@@ -56,7 +56,7 @@ jQuery(document).ready(function() {
     jQuery("#addLegend").hide();
 
     jQuery("[name=add_birthdate]").show();
-    jQuery("#who").val("~~"+tag_id+"~~").trigger("liszt:updated");
+    jQuery("#who").val("~~"+tag_id+"~~").trigger("chosen:updated");
     jQuery("#birthdateSelect").val(birthdate);
 
     jQuery("#birthdateList tr").removeClass("rowSelected");
@@ -86,20 +86,20 @@ jQuery(document).ready(function() {
   });
 
 });
-{/literal}{/footer_script}
+{/footer_script}
 
-
-{literal}
-<style>
+{html_style}{literal}
 form fieldset p {text-align:left;margin:0 0 1.5em 0;line-height:20px;}
 .rowSelected {background-color:#C2F5C2 !important}
 form .error {display:none; color:red;}
 .birthdateActions {text-align:center;}
 .birthdateActions a:hover {border:none}
+.ui-datepicker-current {display:none}
 
 #editLegend {display:none}
-</style>
-{/literal}
+.birthdateActions a {display:inline-block;}
+.birthdateActions a:hover {text-decoration:none;}
+{/literal}{/html_style}
 
 <div class="titrePage">
   <h2>{'Manage birthdates'|@translate}</h2>
@@ -119,7 +119,7 @@ form .error {display:none; color:red;}
     <p>
       <strong>{'Who?'|@translate}</strong>
       <br>
-      <select id="who" name="who" data-placeholder="{'Select a tag'|@translate}" style="width:250px;">
+      <select id="who" name="who" data-placeholder="{'Select a tag'|@translate}">
         <option value=""></option>
 {foreach from=$tags item=tag}
         <option value="{$tag.id}">{$tag.name}</option>
@@ -156,12 +156,8 @@ form .error {display:none; color:red;}
     <td>{$birthdate.BIRTHDATE}</td>
     <td>{$birthdate.PHOTOS}</td>
     <td class="birthdateActions">
-      <a href="#" class="editBirthdate" data-tag_id="{$birthdate.TAG_ID}" data-birthdate="{$birthdate.BIRTHDATE_RAW}">
-        <img src="{$ROOT_URL}{$themeconf.admin_icon_dir}/edit_s.png" alt="{'edit'|@translate}" title="{'edit'|@translate}" />
-      </a>
-      <a href="{$birthdate.U_DELETE}" onclick="return confirm( document.getElementById('btn_delete{$birthdate.TAG_ID}').title + '\n\n' + '{'Are you sure?'|@translate|@escape:'javascript'}');">
-        <img src="{$ROOT_URL}{$themeconf.admin_icon_dir}/delete.png" id="btn_delete{$birthdate.TAG_ID}" alt="{'delete'|@translate}" title="{'Delete birthdate for %s'|@translate|@sprintf:$birthdate.NAME}" />
-      </a>
+      <a href="#" class="editBirthdate icon-pencil" data-tag_id="{$birthdate.TAG_ID}" data-birthdate="{$birthdate.BIRTHDATE_RAW}" title="{'edit'|@translate}"></a>
+      <a href="{$birthdate.U_DELETE}" onclick="return confirm( document.getElementById('btn_delete{$birthdate.TAG_ID}').title + '\n\n' + '{'Are you sure?'|@translate|@escape:'javascript'}');" class="icon-trash" title="{'Delete birthdate for %s'|@translate|@sprintf:$birthdate.NAME}"></a>
     </td>
   </tr>
   {/foreach}
