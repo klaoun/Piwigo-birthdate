@@ -22,18 +22,17 @@
 // +-----------------------------------------------------------------------+
 $lang['%d photo'] = '%d foto';
 $lang['%d photos'] = '%d fotos';
-$lang['Add a birthdate'] = 'Afegeix un aniversari';
-$lang['Birthdate'] = 'Aniversari';
-$lang['Birthdate removed for %s'] = 'Aniversari eliminat de %s';
+$lang['Add a birthdate'] = 'Afegeix una data d\'aniversari';
+$lang['Birthdate'] = 'Data d\'aniversari';
+$lang['Birthdate removed for %s'] = 'S\'ha eliminat la data d\'aniversari de %s';
 $lang['Birthdates'] = 'Aniversaris';
-$lang['Delete birthdate for %s'] = 'Elimina l\'aniversari de %s';
-$lang['Edit a birthdate'] = 'Edita un aniversari';
-$lang['Manage birthdates'] = 'Gestiona els aniversaris';
+$lang['Delete birthdate for %s'] = 'Elimina la data d\'aniversari de %s';
+$lang['Edit a birthdate'] = 'Edita una data d\'aniversari';
+$lang['Manage birthdates'] = 'Gestiona les dates d\'aniversari';
 $lang['Minute'] = 'Minut';
 $lang['No photo'] = 'Sense foto';
 $lang['Now'] = 'Ara';
-$lang['Select a birthdate'] = 'Indiqueu un aniversari';
+$lang['Select a birthdate'] = 'Indiqueu una data d\'aniversari';
 $lang['Select a tag'] = 'Indiqueu una etiqueta';
 $lang['Who?'] = 'Qui?';
-$lang['on this photo %s is %s old'] = 'aquesta foto %s és %s vella';
-?>
+$lang['on this photo %s is %s old'] = 'aquesta foto %s és %s antiga';
