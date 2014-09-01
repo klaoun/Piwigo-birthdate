@@ -88,7 +88,7 @@ SELECT *
   }
 
   $tag = pwg_db_fetch_assoc($result);
-  $name = trigger_event('render_tag_name', $tag['name']);
+  $name = trigger_change('render_tag_name', $tag['name']);
   
   $query = '
 UPDATE '.TAGS_TABLE.'
