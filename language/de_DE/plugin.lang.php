@@ -22,18 +22,17 @@
 // +-----------------------------------------------------------------------+
 $lang['%d photo'] = '%d Foto';
 $lang['%d photos'] = '%d Fotos';
-$lang['Add a birthdate'] = 'Füge ein Geburtsdatum hinzu';
+$lang['Add a birthdate'] = 'Geburtsdatum hinzufügen';
 $lang['Birthdate'] = 'Geburtstag';
 $lang['Birthdate removed for %s'] = 'Geburtstag entfernt für %s';
 $lang['Birthdates'] = 'Geburtstage';
-$lang['Delete birthdate for %s'] = 'Lösche Geburtstage für %s';
-$lang['Edit a birthdate'] = 'Bearbeite ein Geburtstag';
-$lang['Manage birthdates'] = 'Verwalte Geburtstage';
-$lang['Minute'] = 'Minuten';
+$lang['Delete birthdate for %s'] = 'Geburtstage für %s löschen';
+$lang['Edit a birthdate'] = 'Einen Geburtstag bearbeiten';
+$lang['Manage birthdates'] = 'Geburtstage verwalten';
+$lang['Minute'] = 'Minute';
 $lang['No photo'] = 'Kein Foto';
 $lang['Now'] = 'Jetzt';
-$lang['Select a birthdate'] = 'Wähle ein Geburtsdatum';
-$lang['Select a tag'] = 'Wähle ein Schlagwort';
+$lang['Select a birthdate'] = 'Geburtsdatum wählen';
+$lang['Select a tag'] = 'Schlagwort wählen';
 $lang['Who?'] = 'Wer?';
-$lang['on this photo %s is %s old'] = 'in diesem Foto %2 ist %s alt';
-?>
+$lang['on this photo %s is %s old'] = 'auf diesem Foto ist %s %s Jahre alt';
