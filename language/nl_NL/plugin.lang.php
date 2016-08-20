@@ -22,7 +22,7 @@
 // +-----------------------------------------------------------------------+
 $lang['Select a tag'] = 'Selecteer een label';
 $lang['%d photo'] = '%d foto';
-$lang['%d photos'] = '%d fotos';
+$lang['%d photos'] = '%d foto\'s';
 $lang['Add a birthdate'] = 'Voeg een verjaardag toe';
 $lang['Birthdate'] = 'Verjaardag';
 $lang['Birthdate removed for %s'] = 'Verdaag verwijderd van %s';
@@ -36,4 +36,3 @@ $lang['Now'] = 'Nu';
 $lang['Select a birthdate'] = 'Kies een verjaardag';
 $lang['Who?'] = 'Wie?';
 $lang['on this photo %s is %s old'] = 'op deze foto is %s %s jaar';
-?>
