@@ -6,6 +6,7 @@ Description: Set a birthdate on a tag and Piwigo will display the age on any pho
 Plugin URI: auto
 Author: plg
 Author URI: http://le-gall.net/pierrick
+Has Settings: true
 */
 
 defined('PHPWG_ROOT_PATH') or die('Hacking attempt!');
@@ -31,15 +32,7 @@ define('BIRTHDATE_VERSION', 'auto');
 // init the plugin
 add_event_handler('init', 'birthdate_init');
 
-if (defined('IN_ADMIN'))
-{
-  // admin plugins menu link
-  add_event_handler('get_admin_plugin_menu_links', 'birthdate_admin_plugin_menu_links');
-  
-  // file containing all previous handlers functions
-  include_once(BIRTHDATE_PATH . 'include/admin_events.inc.php');
-}
-else
+if (!defined('IN_ADMIN'))
 {
   // add age on tags
   add_event_handler('loc_end_picture', 'birthdate_loc_end_picture');
