@@ -1,0 +1,1 @@
+Settu fæðingardag á merki og Piwigo mun sýna aldurinn á hvaða mynd sem er.
