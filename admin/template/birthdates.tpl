@@ -1,10 +1,4 @@
-{combine_script id='jquery.timepicker' require='jquery.ui.datepicker,jquery.ui.slider' load='footer' path=$BIRTHDATE_PATH|@cat:"admin/template/jquery-ui-timepicker-addon.js"}
-
-{assign var="datepicker_language" value="themes/default/js/ui/i18n/jquery.ui.datepicker-`$lang_info.code`.js"}
-
-{if "PHPWG_ROOT_PATH"|@constant|@cat:$datepicker_language|@file_exists}
-{combine_script id="jquery.ui.datepicker-$lang_info.code" load='footer' path=$datepicker_language}
-{/if}
+{include file='include/datepicker.inc.tpl'}
 
 {combine_script id='jquery.chosen' load='footer' path='themes/default/js/plugins/chosen.jquery.min.js'}
 {combine_css path="themes/default/js/plugins/chosen.css"}
@@ -12,21 +6,16 @@
 {combine_css path="themes/default/js/ui/theme/jquery.ui.datepicker.css"}
 {combine_css path="themes/default/js/ui/theme/jquery.ui.slider.css"}
 
-{footer_script require='jquery.timepicker'}
+{footer_script}
 jQuery(document).ready(function() {
   jQuery("#who").chosen({ "width":"300px" });
 
-  jQuery('#birthdateSelect').datetimepicker({
-    numberOfMonths: 1,
-    changeMonth: true,
-    changeYear: true,
-    yearRange: "1900:+1",
-    dateFormat: "yy-mm-dd",
-    timeText: '{'selection'|@translate|escape:javascript}',
-    hourText: '{'Hour'|@translate|escape:javascript}',
-    minuteText: '{'Minute'|@translate|escape:javascript}',
-    currentText: '{'Now'|@translate|escape:javascript}',
-    closeText: '{'Validate'|@translate|escape:javascript}'
+{* <!-- DATEPICKER --> *}
+  jQuery(function(){ {* <!-- onLoad needed to wait localization loads --> *}
+    jQuery('[data-datepicker]').pwgDatepicker({
+      showTimepicker: true,
+      cancelButton: '{'Cancel'|translate}'
+    });
   });
 
   jQuery("#displayForm").click(function() {
@@ -75,11 +64,6 @@ jQuery(document).ready(function() {
       nb_errors++;
     }
 
-    if ("" == jQuery("#birthdateSelect").val()) {
-      jQuery("#birthdateError").show();
-      nb_errors++;
-    }
-
     if (nb_errors > 0) {
       return false;
     }
@@ -94,7 +78,6 @@ form fieldset p {text-align:left;margin:0 0 1.5em 0;line-height:20px;}
 form .error {display:none; color:red;}
 .birthdateActions {text-align:center;}
 .birthdateActions a:hover {border:none}
-.ui-datepicker-current {display:none}
 
 #editLegend {display:none}
 .birthdateActions a {display:inline-block;}
@@ -109,7 +92,7 @@ form .error {display:none; color:red;}
   <a id="displayForm" href="#">{'Add a birthdate'|@translate}</a>
 </p>
 
-<form method="post" name="add_birthdate" action="{$F_ADD_ACTION}" style="display:none">
+<form method="post" name="add_birthdate" action="" style="display:none">
   <fieldset>
     <legend>
       <span id="editLegend">{'Edit a birthdate'|@translate}</span>
@@ -131,8 +114,11 @@ form .error {display:none; color:red;}
     <p>
       <strong>{'Birthdate'|@translate}</strong>
       <br>
-      <input type="text" id="birthdateSelect" name="birthdate" style="width:120px;" value="{$BIRTHDATE}">
-      <span class="error" id="birthdateError">&#x2718; {'Select a birthdate'|@translate}</span>
+      <input type="hidden" name="birthdate" value="{$BIRTHDATE_DEFAULT}">
+      <label class="date-input">
+        <i class="icon-calendar"></i>
+        <input type="text" id="birthdateSelect" data-datepicker="birthdate" data-datepicker-unset="birthdate_unset" readonly>
+      </label>
     </p>
 
     <p style="margin:0;">

@@ -116,6 +116,8 @@ $template->set_filename(
   realpath(BIRTHDATE_PATH . 'admin/template/birthdates.tpl')
   );
 
+$template->assign('BIRTHDATE_DEFAULT', date('Y-m-d H:i:s', strtotime(rand(3, 120).' months ago')));
+
 // +-----------------------------------------------------------------------+
 // | prepare form                                                          |
 // +-----------------------------------------------------------------------+
