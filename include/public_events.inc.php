@@ -8,7 +8,7 @@ function birthdate_loc_end_picture()
 {
   global $template, $picture;
 
-  if (isset($picture['current']['date_creation']))
+  if (!empty($picture['current']['date_creation']))
   {
     list($ymd, $hms) = explode(' ', $picture['current']['date_creation']);
     list($year, $month, $day) = explode('-', $ymd);
